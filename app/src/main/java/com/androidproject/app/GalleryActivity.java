@@ -41,6 +41,8 @@ public class GalleryActivity extends ActionBarActivity {
         }
     }
 
+    // Teswt
+
     private class ImageAdapter extends BaseAdapter {
 
         private Context context;
