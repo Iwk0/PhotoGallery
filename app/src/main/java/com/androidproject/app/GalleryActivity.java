@@ -102,8 +102,6 @@ public class GalleryActivity extends ActionBarActivity {
             LoadPicture loadPicture = new LoadPicture(imageView, position);
             loadPicture.execute(itemList.get(position));
 
-            Bitmap ThumbImage = ThumbnailUtils.extractThumbnail(BitmapFactory.decodeFile(itemList.get(position)), 100, 100);
-
             return imageView;
         }
     }
