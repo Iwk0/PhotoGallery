@@ -9,7 +9,7 @@
         android:id="@+id/commentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:textSize="30sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -20,18 +20,18 @@
     </EditText>
 
     <ListView
+        android:id="@android:id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@android:id/list"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/writeComments" />
 
     <Button
+        android:id="@+id/writeComments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/send_comment"
-        android:id="@+id/writeComments"
         android:onClick="addComment"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

@@ -32,8 +32,7 @@ public class GalleryActivity extends ActionBarActivity {
         GridView gridview = (GridView) findViewById(R.id.gridView);
         ImageAdapter imageAdapter = new ImageAdapter(this);
         gridview.setAdapter(imageAdapter);
-        String ExternalStorageDirectoryPath = Environment
-                .getExternalStorageDirectory().getAbsolutePath();
+        String ExternalStorageDirectoryPath = Environment.getExternalStorageDirectory().getAbsolutePath();
 
         String targetPath = ExternalStorageDirectoryPath + "/Wallpapers/";
         File targetDirector = new File(targetPath);
