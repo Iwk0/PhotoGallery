@@ -31,7 +31,7 @@ public class GalleryActivity extends ActionBarActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery_activity);
-        Log.i("", "");
+
         GridView gridview = (GridView) findViewById(R.id.gridView);
         ImageAdapter imageAdapter = new ImageAdapter(this);
         gridview.setAdapter(imageAdapter);
