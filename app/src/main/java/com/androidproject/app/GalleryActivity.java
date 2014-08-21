@@ -9,6 +9,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -39,7 +40,7 @@ public class GalleryActivity extends ActionBarActivity {
 
         String targetPath = ExternalStorageDirectoryPath + "/Wallpapers/";
         File targetDirector = new File(targetPath);
-
+        Log.i("", "");
         for (File file : targetDirector.listFiles()) {
             imageAdapter.add(file.getAbsolutePath());
         }
