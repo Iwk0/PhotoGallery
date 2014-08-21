@@ -9,6 +9,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -30,7 +31,7 @@ public class GalleryActivity extends ActionBarActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery_activity);
-
+        Log.i("", "");
         GridView gridview = (GridView) findViewById(R.id.gridView);
         ImageAdapter imageAdapter = new ImageAdapter(this);
         gridview.setAdapter(imageAdapter);
