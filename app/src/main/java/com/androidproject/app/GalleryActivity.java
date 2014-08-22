@@ -41,7 +41,7 @@ public class GalleryActivity extends ActionBarActivity {
         }
     }
 
-    // Test Home
+    // Test Home1
 
     private class ImageAdapter extends BaseAdapter {
 
