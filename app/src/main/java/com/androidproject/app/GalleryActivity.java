@@ -41,7 +41,7 @@ public class GalleryActivity extends ActionBarActivity {
         }
     }
 
-    // Teswt
+    // Test Home
 
     private class ImageAdapter extends BaseAdapter {
 
