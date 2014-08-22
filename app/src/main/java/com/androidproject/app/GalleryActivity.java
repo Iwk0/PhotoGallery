@@ -41,8 +41,6 @@ public class GalleryActivity extends ActionBarActivity {
         }
     }
 
-    // Test Home1
-
     private class ImageAdapter extends BaseAdapter {
 
         private Context context;
