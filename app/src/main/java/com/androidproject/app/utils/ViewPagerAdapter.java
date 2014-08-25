@@ -27,9 +27,10 @@ public class ViewPagerAdapter extends PagerAdapter {
     private ViewPager pager;
     private boolean isHidden = false;
 
-    public ViewPagerAdapter(Activity act, List<String> images) {
+    public ViewPagerAdapter(Activity activity, List<String> images) {
         this.images = images;
-        activity = act;
+        this.activity = activity;
+
         linearLayout = (LinearLayout) activity.findViewById(R.id.toolBar);
 
         pager = (ViewPager) activity.findViewById(R.id.slide_show);

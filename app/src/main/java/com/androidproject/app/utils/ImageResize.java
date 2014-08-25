@@ -14,8 +14,8 @@ public class ImageResize {
         BitmapFactory.decodeFile(path, options);
 
         options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
-
         options.inJustDecodeBounds = false;
+
         Bitmap bm = BitmapFactory.decodeFile(path, options);
 
         return bm;

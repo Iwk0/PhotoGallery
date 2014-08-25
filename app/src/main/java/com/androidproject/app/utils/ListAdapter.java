@@ -23,10 +23,12 @@ public class ListAdapter extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.message_dialog);
+
         comment = (EditText) findViewById(R.id.commentText);
 
         listItems = new ArrayList<String>();
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
+
         setListAdapter(adapter);
     }
 
